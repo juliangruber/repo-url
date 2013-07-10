@@ -1,6 +1,6 @@
 {
   "name": "git-url",
-  "description": "Get a package's git url.",
+  "description": "Get a npm package's repo url, with convenient cli.",
   "version": "0.0.0",
   "repository": {
     "type": "git",
