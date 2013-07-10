@@ -8,7 +8,7 @@ Get a npm package's repository url, with convenient cli.
 To clone [browserify](https://github.com/substack/node-browserify)'s repository from the terminal:
 
 ```bash
-$ git clone ${repo-url browserify}
+$ git clone $(repo-url browserify)
 ```
 
 To get its url from JS:
