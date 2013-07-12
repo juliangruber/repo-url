@@ -1,7 +1,7 @@
 var repoUrl = require('..');
 var test = require('tape');
 
-test('get repo url', function (t) {
+test('public repo url', function (t) {
   t.plan(2);
   repoUrl('repo-url', function (err, url) {
     t.error(err);
