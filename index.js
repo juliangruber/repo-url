@@ -23,9 +23,6 @@ repoUrl.ssh = function (module, fn) {
   });
 };
 
-// git://github.com/juliangruber/repo-url(.git)
-// https://github.com/juliangruber/repo-url.git
-
 repoUrl.https = function (module, fn) {
   getRepository(module, function (err, repo) {
     if (err) return fn(err);
