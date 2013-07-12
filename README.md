@@ -20,6 +20,20 @@ repoUrl('browserify', function (err, url) {
 });
 ```
 
+## API
+
+### repoUrl(module, fn)
+
+Calls `fn` with `module`'s public git url.
+
+### repoUrl.ssh(module, fn)
+
+Calls `fn` with `module`'s private ssh url.
+
+### repoUrl.https(module, fn)
+
+Calls `fn` with `module`'s private https url.
+
 ## Installation
 
 With [npm](http://npmjs.org) do
@@ -28,7 +42,6 @@ With [npm](http://npmjs.org) do
 $ npm install repo-url    # for lib
 $ npm install repo-url -g # for cli
 ```
-
 
 ## License
 
