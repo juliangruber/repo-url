@@ -22,6 +22,16 @@ repoUrl('browserify', function (err, url) {
 
 ## API
 
+### CLI
+
+```bash
+$ repo-url [OPTIONS] [MODULE]
+
+  --ssh   get module's private ssh url
+  --https get module's private https url
+
+```
+
 ### repoUrl(module, fn)
 
 Calls `fn` with `module`'s public git url.
