@@ -1,7 +1,7 @@
 {
   "name": "repo-url",
   "description": "Get a npm package's repo url, with convenient cli.",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/juliangruber/repo-url.git"
