@@ -1,4 +1,3 @@
-
 # repo-url
 
 Get a npm package's repository url, with convenient cli.
@@ -24,7 +23,7 @@ repoUrl('browserify', function (err, url) {
 
 ### CLI
 
-```bash
+```
 $ repo-url [OPTIONS] [MODULE]
 
   --ssh   get module's private ssh url
