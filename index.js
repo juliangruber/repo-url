@@ -11,7 +11,8 @@ var client = new Client({
 function repoUrl (module, fn) {
   getRepository(module, function (err, repo) {
     if (err) return fn(err);
-    fn(null, repo.url);
+    fn(null, repo.url
+        .replace(/^git\+/, ''));
   });
 }
 
@@ -19,7 +20,7 @@ repoUrl.ssh = function (module, fn) {
   getRepository(module, function (err, repo) {
     if (err) return fn(err);
     fn(null, repo.url
-      .replace('git://github.com/', 'git@github.com:'));
+      .replace(/^.*github.com\//, 'git@github.com:'));
   });
 };
 
@@ -27,6 +28,7 @@ repoUrl.https = function (module, fn) {
   getRepository(module, function (err, repo) {
     if (err) return fn(err);
     fn(null, repo.url
+      .replace(/^git\+/, '')
       .replace('git://', 'https://'));
   });
 };
