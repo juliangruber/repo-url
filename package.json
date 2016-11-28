@@ -15,7 +15,7 @@
     "test": "tape test/*.js"
   },
   "dependencies": {
-    "silent-npm-registry-client": "0.0.0"
+    "silent-npm-registry-client": "2.1.0"
   },
   "devDependencies": {
     "tape": "*"
