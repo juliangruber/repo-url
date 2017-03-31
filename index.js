@@ -5,7 +5,7 @@ module.exports = repoUrl;
 
 var client = new Client({
   registry: 'http://registry.npmjs.org/',
-  cache: os.tmpDir() + '/git-url'
+  cache: os.tmpdir() + '/git-url'
 });
 
 function repoUrl (module, fn) {
